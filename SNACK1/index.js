@@ -2,7 +2,12 @@
 Snack 1:
 Scrivi una funzione che accetti una stringa come argomento e la restituisca girata (es. "Ciao" -> "oaiC")
 */
-  let parola = "ciao"
+  let parola = prompt("inserisci una parola")
+  let parolaOutput = document.querySelector("#word")
+  let reverseParolOutput = document.querySelector("#reverse-word")
+
+
+  parolaOutput.innerHTML = parola
 
   function reverse(){
 
@@ -13,10 +18,15 @@ Scrivi una funzione che accetti una stringa come argomento e la restituisca gira
     for(let i =parola.length-1 ; i>=0 ; i--){
         parolaReverse.push(parola[i])
     }
+   
+    // questo mi fa passare da array composto da diverse letter ad una stringa
+    let stringParolaReverse = parolaReverse.join("")
+    
+    reverseParolOutput.innerHTML = stringParolaReverse
 
-    //console.log(parolaReverse)
-
-    return parolaReverse
+    return stringParolaReverse
+   
 }
 
-console.log(reverse())
+// chiamo la funxione reverse appena creata
+reverse()
