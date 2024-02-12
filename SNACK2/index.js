@@ -6,30 +6,14 @@ es. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
 
  */
 
-let array1 = ["a","b","c"]
-let array2 = [1,2,3]
-let concatArray = array1.concat(array2)
+let array1 = ["k","l","m"]
+let array2 = [5,6,9]
 let mixArray = []
-
-
-/*for (let i =0; i<(array1.length+array2.length); i++) {
-
+ let lunghezzaArray = array1.length // questo solo perchè dobbiamo dare per scontato che i due array hanno la stessa lunghezza.
     
-    mixArray.push(array1[i][i])
-}*/
-
-
-for (let i =0; i<array1.length ; i++) {
-    mixArray.push(concatArray[i])
-    
-    for (let j =0; j<array2.length; j++) {
-
-        mixArray[i].push(concatArray[i])
-     } 
-   
- } 
-
- 
-
-
+for (i = 0; i < lunghezzaArray; i++) {
+    mixArray.push(array1[i], array2[i]);
+}
 console.log(mixArray)
+
+
