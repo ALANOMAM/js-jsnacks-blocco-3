@@ -10,3 +10,18 @@ Nel nostro caso, se la chiamassimo così tagliaArray(arrayNumeri, 2, 4) ci resti
 [2, 3, 4]
 
 */
+
+const array = ["a","b","c","d","e","f"]
+let posizioneMinima 
+let posizioneMassima
+
+function taglio (Array,posizioneMinima ,posizioneMassima){
+
+    let arrayTagliato = Array.slice(posizioneMinima,posizioneMassima)
+
+    console.log(arrayTagliato) 
+    
+}
+
+//chiamo la funzione passando il valore degli argomenti
+taglio(array,1,3)
