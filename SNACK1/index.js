@@ -3,6 +3,9 @@ Snack 1:
 Scrivi una funzione che accetti una stringa come argomento e la restituisca girata (es. "Ciao" -> "oaiC")
 */
   let parola = prompt("inserisci una parola")
+
+  if(isNaN(parola)){
+
   let parolaOutput = document.querySelector("#word")
   let reverseParolOutput = document.querySelector("#reverse-word")
 
@@ -30,3 +33,8 @@ Scrivi una funzione che accetti una stringa come argomento e la restituisca gira
 
 // chiamo la funxione reverse appena creata
 reverse()
+
+  }else{
+    alert('devi inserire una parola')
+  }
+
