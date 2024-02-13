@@ -17,7 +17,7 @@ let posizioneMassima
 
 function taglio (Array,posizioneMinima ,posizioneMassima){
 
-    let arrayTagliato = Array.slice(posizioneMinima,posizioneMassima)
+    let arrayTagliato = Array.slice(posizioneMinima,posizioneMassima+1) // agiunto il "+1" cosi comprende anche l'ultimo valore
 
     console.log(arrayTagliato) 
     
